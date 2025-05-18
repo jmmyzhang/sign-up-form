@@ -5,10 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    
-</body>
 
+    <div class="decoration">
+        <div class="logo">
+            <img src="./assets/odin-lined.png" alt="TOP Logo">
+            <h1>Odin</h1>
+        </div>
+        <footer>Photo by <a target="_blank" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a target="_blank" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></footer>
+    </div>
+
+    <div class="content">
+        <section class="intro">
+            <p>This is not a real online service! You know you 
+                need something like this in your life to help you 
+                realize your deepest dreams. Sign up <em>now</em> 
+                to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+        </section>
+
+        <section class="form">
+            <form action="POST">
+                <div class="fields">
+                    <h2>Let's do this!</h2>
+                    <fieldset>
+                        <div class="data">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="data">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                        <div class="data">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="data">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="phone" minlength="10" maxlength="10" pattern="[0-9]{10}">
+                        </div>
+                        <div class="data">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" minlength="8" required>
+                        </div>
+                        <div class="data">
+                            <label for="confirm-password">Confirm password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="confirm">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log In</a></p>
+                </div>
+            </form>
+        </section>
+    </div>
+
+</body>
 </html>
